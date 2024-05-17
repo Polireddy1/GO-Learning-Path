@@ -1,0 +1,71 @@
+Docker
+•	
+containerization
+•	Containerization tools
+docker
+build package, isolated
+
+Architecture of Docker
+Engine 
+Cli
+Container registry
+Image
+Container
+
+Common commands
+
+docker images  - lists all images available images on local m/c
+Docker container ps   -    lists all running containers
+docker ps -a                   - lists running and failed containers
+Docker ps                       - running containers
+Docker pull <image-name>                             -pulls the image to local m/c(download)
+docker run <image-name>                                - download and run
+Docker exec <container-id>
+Docker stop<container-id>
+Docker rm<container-id>                 -removing containers
+dockerrmi<container-id>                   -removing images
+
+
+example:
+
+docker run -dit  devops                   (creating container in interactive mode for the image devops)
+docker container ps                          (verify if created)
+docker exec -it f3fa5aed3346 bash                  (using container id as it hasn’t been named yet)
+              going to the dir                                                                                  -it is interactive mode
+/# ls
+
+
+
+
+Dockerfile- used DSL (Domain Specific Lang) and contains instructions for 
+
+Example:
+FROM ubuntu
+RUN apt-get-update
+RUN apt-get -y install apache2
+ADD . /var/www/html
+ENTRYPOINT apachecti -D
+
+
+
+types of storages:
+docker volume create my-vol
+docker run -it -v <source-directory>
+
+
+Docker Compose
+create n number of containers at a time, build, deploy etc
+
+docker file- one container
+
+Docker Networks
+Website Container
+Database Container
+(networks to connect containers)
+
+types of networks:
+Bridge – default network
+Host – connect docker container to host m/c
+None – Disable existing network
+
+
