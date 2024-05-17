@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-    a := 6
-    if a > 5 {
-        fmt.Println("a is greater than 5")
-    }
+	a := 6
+	if a > 5 {
+		fmt.Println("this greater")
+	}
 }
