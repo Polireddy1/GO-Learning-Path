@@ -1,0 +1,16 @@
+Function:
+ A function is an independent block of code that performs a specific task or set of tasks and can be called by its name.
+
+ Method:
+ A method is a function that is associated with a specific type (such as a struct) and has a receiver parameter.
+
+
+Uses:
+
+ Encapsulation and Data Hiding
+ Improved Readability and Maintainability
+ Polymorphism 
+ Receiver Types (Value vs. Pointer)
+   -Value receivers operate on a copy of the struct, making them suitable for read-only operations or
+    when you don't want to modify the original data
+   -Pointer receivers operate on the original struct, allowing you to modify its state within the method
