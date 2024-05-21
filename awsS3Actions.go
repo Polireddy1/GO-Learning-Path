@@ -17,8 +17,8 @@ import (
 func main() {
 
 	creds := aws.Credentials{
-		AccessKeyID:     "AKIATJAXBKQBSANUZCMO",
-		SecretAccessKey: "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",
+		AccessKeyID:     "",
+		SecretAccessKey: "",
 	}
 
 	// Create a static credentials provider
